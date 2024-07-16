@@ -131,3 +131,32 @@ class Cliente {
         }
     }
 }
+
+///carpeta de los clientes///
+Miguel, 1000.0
+Samuel, 1000.0
+Gabriely, 1000.0
+Francisco, 1000.0
+Pedro, 500.0
+Gloria, 300.0
+Valeria, 200.0
+Adriana, 300.0
+Ricardo,1000.0
+Sara, 2000.0
+Diego, 500.0
+Elena, 1000.0
+Carmen,300.0
+Juan, 1000.0
+Pablo, 2000.0
+Fernando, 300.0
+Isabel, 2000.0
+Flavio, 200.0
+Tuntun, 400.0
+Hilario, 500.0
+Pednelope, 600.0
+David, 2500.0
+Elsy, 900.0
+Mae, 350.0
+Gonzales, 700.0
+
+
