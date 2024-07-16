@@ -1,0 +1,45 @@
+package models;
+
+import java.util.Scanner;
+
+public class Input {
+    static Scanner sc = new Scanner(System.in);
+    
+  
+     * @param max El numero maximo de opciones del usuario
+     * @param msj El mesaje que se le muestra al usuario
+     * @return La opcion del usuario que es un nuemero entre 1 y max, en caso de error retorna -1
+     */
+    public static int option(int max, String msj) {
+        int op = -1;
+        try {
+            do {
+                if (((op < 1) || (op > max)) && (op != -1)) {
+                    Display.error("La opcion no es valida");
+                }
+                System.out.print("\n\t" + msj);
+                String opt = sc.next();
+                op = Integer.parseInt(opt);
+            } while ((op < 1) || (op > max));
+        } catch(NumberFormatException nfe) {
+           Display.error("La opcion debe ser un numero");
+        }
+        return op;
+    }
+    
+    public static double amount(String msj) {
+        double amount = 0.0;
+        boolean successful = false;
+        do {
+            try {
+                System.out.print("\n\t" + msj);
+                String amountS = sc.next();
+                amount = Double.parseDouble(amountS);
+                successful = true;
+            } catch(NumberFormatException nfe) {
+               Display.error("La opcion debe ser un numero");
+            }
+        } while (!successful);
+        return amount;
+    }
+}
