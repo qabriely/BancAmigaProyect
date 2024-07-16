@@ -1,0 +1,56 @@
+package models;
+
+public class Node<T> {
+    private T value;
+    private Node<T> next;
+
+    public Node() {
+        this.value = null;
+        this.next = null;
+    }
+      @param v El valor del nodo
+      @param next El nodo siguiente
+    public Node(T v, Node<T> next){
+        this.value = v;
+        this.next = next;
+    }
+     * @param v 
+     */
+    public Node(T v) {
+        this.value = v;
+        this.next = null;
+    }
+    
+     * @return El siguiente nodo
+     */
+    public Node<T> getNext() {
+       return this.next;
+    }
+    
+    /**
+     * Metodo que modifica el siguiente nodo
+     *
+     * @param next El nodo por el cual se cambiara el actual
+     */
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
+    
+    /**
+     * Metodo que obtiene el valor del nodo
+     *
+     * @return El siguiente nodo
+     */
+    public T getValue() {
+       return this.value;
+    }
+    
+    /**
+     * Metodo que modifica el siguiente nodo
+     *
+     * @param v El valor por el cual se cambiara el actual
+     */
+    public void setValue(T v) {
+        this.value = v;
+    }
+}
